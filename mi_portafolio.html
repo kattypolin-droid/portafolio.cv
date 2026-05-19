@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Perfil Junior en TI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background:linear-gradient(to right,#eef2f7,#d9e4f5);
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:linear-gradient(135deg,#1f3c88,#2952a3);
+            color:white;
+            text-align:center;
+            padding:50px 20px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1{
+            font-size:40px;
+            margin-bottom:10px;
+        }
+
+        header p{
+            font-size:18px;
+            opacity:0.9;
+        }
+
+        nav{
+            background-color:#16356d;
+            padding:15px;
+            text-align:center;
+            position:sticky;
+            top:0;
+            z-index:1000;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffd166;
+        }
+
+        main{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:20px 0;
+        }
+
+        section{
+            background:white;
+            margin:25px 0;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        section:hover{
+            transform:translateY(-5px);
+        }
+
+        h2{
+            color:#1f3c88;
+            margin-bottom:20px;
+            border-left:6px solid #1f3c88;
+            padding-left:10px;
+        }
+
+        h3{
+            color:#2952a3;
+            margin-top:15px;
+            margin-bottom:10px;
+        }
+
+        article{
+            margin-bottom:20px;
+        }
+
+        img{
+            width:170px;
+            height:170px;
+            object-fit:cover;
+            border-radius:50%;
+            border:5px solid #2952a3;
+            display:block;
+            margin:20px auto;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        aside{
+            background:#f1f5ff;
+            padding:15px;
+            border-left:5px solid #2952a3;
+            border-radius:8px;
+            margin-top:15px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+            overflow:hidden;
+            border-radius:10px;
+        }
+
+        thead{
+            background:#1f3c88;
+            color:white;
+        }
+
+        th, td{
+            padding:12px;
+            border:1px solid #ddd;
+            text-align:center;
+        }
+
+        tbody tr:nth-child(even){
+            background:#f5f8ff;
+        }
+
+        tbody tr:hover{
+            background:#dbe8ff;
+        }
+
+        ul{
+            margin-left:20px;
+            margin-bottom:20px;
+        }
+
+        ul li{
+            margin-bottom:10px;
+        }
+
+        dl dt{
+            font-weight:bold;
+            color:#1f3c88;
+            margin-top:10px;
+        }
+
+        dl dd{
+            margin-left:20px;
+            margin-bottom:10px;
+        }
+
+        video, audio{
+            margin-top:15px;
+            width:100%;
+            max-width:400px;
+            border-radius:10px;
+        }
+
+        form{
+            margin-top:20px;
+        }
+
+        fieldset{
+            border:none;
+        }
+
+        legend{
+            font-size:20px;
+            font-weight:bold;
+            color:#1f3c88;
+            margin-bottom:15px;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        input,
+        textarea,
+        select{
+            width:100%;
+            padding:12px;
+            margin-top:5px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            outline:none;
+            transition:0.3s;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus{
+            border-color:#2952a3;
+            box-shadow:0 0 8px rgba(41,82,163,0.3);
+        }
+
+        textarea{
+            resize:none;
+            height:120px;
+        }
+
+        button{
+            background:#1f3c88;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#2952a3;
+            transform:scale(1.05);
+        }
+
+        footer{
+            background:#1f3c88;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+            font-size:15px;
+        }
+
+        @media(max-width:768px){
+
+            header h1{
+                font-size:28px;
+            }
+
+            nav a{
+                display:block;
+                margin:10px 0;
+            }
+
+            section{
+                padding:20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mi Primer Portafolio Profesional</h1>
+    <p>Perfil Junior en Tecnologías de la Información</p>
+</header>
+
+<nav>
+    <a href="#objetivo">Objetivo</a>
+    <a href="#formacion">Formación</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+    <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a>
+</nav>
+
+<main>
+
+<section id="objetivo">
+    <h2>Objetivo Profesional</h2>
+    <p>
+        Desarrollarme profesionalmente en el área de sistemas,
+        aplicando conocimientos en desarrollo web utilizando HTML5,
+        herramientas modernas y buenas prácticas de programación.
+    </p>
+</section>
+
+<section>
+    <h2>Datos Personales</h2>
+
+    <article>
+        <img src="img/IMAGEN.png" alt="Foto profesional">
+
+        <p><strong>Nombre:</strong> Katty Fabiola Polin Cayetano</p>
+        <p><strong>Email:</strong> katty.polin@iestpmonfortianos.edu.pe</p>
+        <p><strong>Teléfono:</strong> 921962040</p>
+    </article>
+
+    <aside>
+        Perfil enfocado en desarrollo web y aprendizaje continuo
+        en tecnologías frontend.
+    </aside>
+</section>
+
+<section id="formacion">
+    <h2>Formación Académica</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Año</th>
+                <th>Institución</th>
+                <th>Especialidad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>2026</td>
+                <td>IESTP Misioneros Monfortianos</td>
+                <td>Desarrollo de Sistemas de Información</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Certificaciones en proceso</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+<section id="habilidades">
+    <h2>Habilidades Técnicas</h2>
+
+    <ul>
+        <li>HTML5</li>
+        <li>Visual Studio Code</li>
+        <li>Git y GitHub</li>
+        <li>Trabajo en equipo</li>
+    </ul>
+
+    <h3>Conceptos Técnicos</h3>
+
+    <dl>
+        <dt>HTML5</dt>
+        <dd>Lenguaje de marcado para estructurar páginas web.</dd>
+
+        <dt>Git</dt>
+        <dd>Sistema de control de versiones.</dd>
+
+        <dt>Repositorio</dt>
+        <dd>Espacio donde se almacena un proyecto en GitHub.</dd>
+    </dl>
+</section>
+
+<section id="proyectos">
+    <h2>Proyectos Destacados</h2>
+
+    <article>
+        <h3>Proyecto Matrícula</h3>
+        <p>Sistema básico de registro utilizando formularios HTML.</p>
+    </article>
+
+    <article>
+        <h3>Proyecto Telemedicina</h3>
+        <p>Diseño de interfaz para gestión de citas médicas.</p>
+    </article>
+
+    <article>
+        <h3>Proyecto Catálogo</h3>
+        <p>Página web para mostrar productos con estructura semántica.</p>
+    </article>
+
+    <h3>Video de Presentación</h3>
+    <video controls>
+        <source src="video/cv.mp4" type="video/mp4">
+    </video>
+
+    <h3>Audio Resumen Técnico</h3>
+    <audio controls>
+        <source src="audio/audio cv.mp4" type="audio/mpeg">
+    </audio>
+</section>
+
+<section id="contacto">
+    <h2>Formulario de Contacto</h2>
+
+    <form>
+        <fieldset>
+
+            <legend>Información de Contacto</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z ]+">
+
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <label for="area">Área de Interés:</label>
+            <select id="area" name="area" required>
+
+                <optgroup label="Desarrollo">
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                </optgroup>
+
+                <optgroup label="Soporte">
+                    <option>Redes</option>
+                    <option>Seguridad</option>
+                </optgroup>
+
+            </select>
+
+            <br><br>
+
+            <button type="submit">Enviar</button>
+
+        </fieldset>
+    </form>
+</section>
+
+<section>
+    <h2>Referencias</h2>
+    <p>Docente del curso: ROSELL ALEJANDRO VALDERRAMA CHUMBES</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 - Mi CV Online | Proyecto Académico</p>
+</footer>
+
+</body>
+</html>
